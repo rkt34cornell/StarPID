@@ -8,8 +8,7 @@ Covariance Matrix
 | DEC_error   | 2.9585521218141e-08 | 6.190014088584843e-06 | -0.0001625924476595249 |
 | Roll_error  | 0.0004044725690919465 | -0.0001625924476595249 | 75.43528880682577 |
 
-![Pointing Deviations](StandardDevs.png)
-
+<img src="StandardDevs.png" alt="Pointing Deviations" style="width:50%;"/>
 
 (Shapiro–Wilk is performed on up to 5k samples; p-values far below 0.05 indicate deviation from a perfect Gaussian.)
 
