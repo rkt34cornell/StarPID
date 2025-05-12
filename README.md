@@ -7,6 +7,13 @@ Covariance Matrix
 | RA_error    | 1.071931529731781e-05 | 2.9585521218141e-08 | 0.0004044725690919465 |
 | DEC_error   | 2.9585521218141e-08 | 6.190014088584843e-06 | -0.0001625924476595249 |
 | Roll_error  | 0.0004044725690919465 | -0.0001625924476595249 | 75.43528880682577 |
+We computed the covariance matrix by first calculating per‐image errors  
+(`RA_error = RA_adv - RA_gen`, `DEC_error = DEC_adv - DEC_gen`, `Roll_error = Roll_adv - Roll_gen`)  
+for every genuine–adversarial pair in master csv - attitude_errors_combined.csv. These three error columns were loaded into pandas and we ran `errors.cov()`, which uses the unbiased estimator  
+\[
+\mathrm{Cov}(X,Y) = \frac{1}{N-1}\sum_{i=1}^N (X_i - \bar X)(Y_i - \bar Y)
+\]
+to produce the 3×3 covariance matrix.  The diagonal entries are the variances and the off‐diagonals are the covariances.  
 
 <img src="StandardDevs.png" alt="Pointing Deviations" style="width:50%;"/>
 
