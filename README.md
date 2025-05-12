@@ -96,7 +96,6 @@ For our baseline (genuine) dataset we extracted Level-0 FITS frames from the SEC
 
 - **`distribution_plots/`**  
   - Histograms & KDEs for each error metric, boxplots by attack type & level.  
-  - For a composite view, see `combined_errors_kde.png` 
 ---
 
 > “Per-image deviations” live in the three `<axis>_error` columns of **`attitude_errors_combined.csv`**.  
