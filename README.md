@@ -1,10 +1,14 @@
-## Covariance Matrix
+## Data Summary
+
+Covariance Matrix
 
 |             | RA_error            | DEC_error           | Roll_error          |
 |-------------|---------------------|---------------------|---------------------|
 | RA_error    | 1.071931529731781e-05 | 2.9585521218141e-08 | 0.0004044725690919465 |
 | DEC_error   | 2.9585521218141e-08 | 6.190014088584843e-06 | -0.0001625924476595249 |
 | Roll_error  | 0.0004044725690919465 | -0.0001625924476595249 | 75.43528880682577 |
+
+(Shapiro–Wilk is performed on up to 5k samples; p-values far below 0.05 indicate deviation from a perfect Gaussian.)
 
 | Metric       | Count   | Mean      | Std Dev  | Skewness | Kurtosis | Shapiro-W p |
 |--------------|---------|-----------|----------|----------|----------|-------------|
