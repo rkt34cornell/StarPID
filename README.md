@@ -14,8 +14,11 @@
 
 # Star Tracker Adversarial Analysis Outputs
 
-This folder contains the results of our adversarial-image generation and subsequent attitude-solution analysis. Below is a breakdown of each file, what it represents, and pointers on where to find the per-image deviations and summary statistics. We ran the STT pipeline over: 300 000 adversarial images (all 10 000 originals × 6 attack types × 5 levels) and 10 000 genuine images (the matching subset used to generate those adversarials)
+This folder contains the results of our adversarial-image generation and subsequent attitude-solution analysis. Below is a breakdown of each file, what it represents, and pointers on where to find the per-image deviations and summary statistics. 
 
+We ran the STT pipeline (Star Tracker Software) over: 300,000 adversarial images (all 10 000 originals × 6 attack types × 5 levels) and 10 000 genuine images (the matching subset used to generate those adversarials)
+
+For our baseline (genuine) dataset we extracted Level-0 FITS frames from the SECCHI/HI-1A instrument on NASA’s STEREO-A spacecraft. In total we processed images collected during eight mission years — 2009, 2010, 2011, 2012, 2013, 2018, 2019, and 2020.
 ---
 
 ## 1. Raw STT Outputs
