@@ -14,7 +14,7 @@
 
 # Star Tracker Adversarial Analysis Outputs
 
-This folder contains the results of our adversarial-image generation and subsequent attitude-solution analysis. Below is a breakdown of each file, what it represents, and pointers on where to find the per-image deviations and summary statistics.
+This folder contains the results of our adversarial-image generation and subsequent attitude-solution analysis. Below is a breakdown of each file, what it represents, and pointers on where to find the per-image deviations and summary statistics. We ran the STT pipeline over: 300 000 adversarial images (all 10 000 originals × 6 attack types × 5 levels) and 10 000 genuine images (the matching subset used to generate those adversarials)
 
 ---
 
