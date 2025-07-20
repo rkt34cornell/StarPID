@@ -103,3 +103,15 @@ For our baseline (genuine) dataset we extracted Level-0 FITS frames from the SEC
 
 ---
 
+
+## 6. PID Simulation
+
+`pid_simulation.py` is a small utility for exploring how a simple PID controller might respond to the measured pointing errors. It reads the `RA_error`, `DEC_error`, and `Roll_error` columns from `attitude_errors_combined.csv` (or another file you supply), runs independent PIDs for each axis, and writes the control outputs to `pid_corrections.csv`. If `matplotlib` is installed, the script also saves a plot called `pid_corrections.png`.
+
+Example usage:
+
+```bash
+python3 pid_simulation.py --input attitude_errors_combined.csv --output pid_corrections.csv
+```
+
+This can help visualize how STEREO-A's orientation might be corrected over time when faced with the perturbations captured in this dataset.
