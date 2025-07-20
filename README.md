@@ -103,3 +103,15 @@ For our baseline (genuine) dataset we extracted Level-0 FITS frames from the SEC
 
 ---
 
+
+## 6. Dynamics / PID Simulation
+
+`pid_simulation.py` loads the pointing-error tables and applies three PID controllers to emulate how STEREO‑A might respond. The script now includes a very simple dynamics model of the spacecraft. It uses the published spacecraft mass (~620 kg), approximate 1.1 m cube geometry, and heliocentric orbital period (~347 days) to propagate the attitude state. The output CSV (`pid_corrections.csv` by default) contains both the PID torques and the integrated attitude and orbit angle. If `matplotlib` is installed, the script also saves a plot called `pid_corrections.png`.
+
+Example usage:
+
+```bash
+python3 pid_simulation.py --input attitude_errors_combined.csv --output pid_corrections.csv
+```
+
+This can help visualize how STEREO-A's orientation might be corrected over time when faced with the perturbations captured in this dataset.
